@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Abstrktion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .nav-link.active {
+            border-bottom: 2px solid white;
+        }
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg px-lg-5 text-white bg-gradient" style="background-color: #5e149a; color: white;">
+        <a class="navbar-brand px-lg-5 text-white" href="index.html" style="padding: 0.5rem 1rem;">
+            <img src="images/cropped-ABSTRKTION-1-192x192.png" alt="Logo" style="height: 50px;">
+            ABSTRKTION
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-5" id="navbarNav">
+            <ul class="navbar-nav justify-content-center ml-auto" style="margin-left: auto;">
+                <li class="nav-item">
+                    <a class="nav-link link-secondary text-white" href="index.html" style="padding: 0.5rem 1rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark text-white" href="about.html" style="padding: 0.5rem 1rem;">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active link-dark text-white" href="services.html" style="padding: 0.5rem 1rem;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark text-white" href="contact.html" style="padding: 0.5rem 1rem;">Get In Touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--<nav class="navbar navbar-expand-lg" style="background: rgb(255,255,255); background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(94,20,154,0.8855917366946778) 92%);">
+        <a class="navbar-brand" href="index.html" style="padding: 0.5rem 1rem;">
+            <img src="images/cropped-ABSTRKTION-1-180x180.png" alt="Logo" style="height: 30px;">
+            Abstrktion
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" style="margin-left: auto;">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" style="padding: 0.5rem 1rem;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="padding: 0.5rem 1rem;">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html" style="padding: 0.5rem 1rem;">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="padding: 0.5rem 1rem;">Get In Touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>-->
+
+    <section class="position-relative py-5 text-white" style="background: url('images/pexels-craigmdennis-57007.jpg') no-repeat center center; background-size: cover;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container position-relative text-center">
+            <h1>Services</h1>
+            <!--<a href="getintouch.html" class="btn btn-dark text-white mt-3">Get in Touch</a>-->
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #A42BEA;">ERP and CRM Implementation</h2>
+            <p class="text-center mb-5">We specialize in implementing ERP and CRM solutions that streamline operations, manage customer relationships, and leverage data to make informed decisions. Our tailored approach ensures that each solution aligns with your strategic objectives and enhances overall business performance.</p>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">ERP Implementation</h5>
+                            <p class="card-text">Streamline your business processes and improve resource management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">CRM Solutions</h5>
+                            <p class="card-text">Enhance customer interactions and drive sales performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Customization & Integration</h5>
+                            <p class="card-text">Tailor solutions to fit your unique business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-life-ring fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Ongoing Support</h5>
+                            <p class="card-text">Ensure long-term success with continuous optimization and assistance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white">Business Process Automation</h2>
+            <p class="text-center mb-5 text-white">Our automation services enable businesses to reduce manual tasks and optimize workflows, enhancing productivity and allowing teams to focus on strategic initiatives.</p>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sync-alt fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Workflow Automation</h5>
+                            <p class="card-text">Automate repetitive tasks to increase efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Custom Applications</h5>
+                            <p class="card-text">Develop bespoke applications to address specific business challenges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Data Analytics</h5>
+                            <p class="card-text">Utilize advanced tools to gain actionable insights and drive informed decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-network-wired fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">System Integration</h5>
+                            <p class="card-text">Seamlessly integrate automated processes with existing systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #A42BEA;">Custom Software Development</h2>
+            <p class="text-center mb-5">We offer custom software solutions that address specific business challenges, ensuring a perfect fit with each client’s goals and operational needs.</p>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Bespoke Software Solutions</h5>
+                            <p class="card-text">Develop tailored software to meet unique business requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Mobile & Web Applications</h5>
+                            <p class="card-text">Create user-friendly applications to enhance your digital presence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tools fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Software Maintenance & Support</h5>
+                            <p class="card-text">Provide ongoing support to ensure software reliability and performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-expand-arrows-alt fa-2x mb-3 " style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Scalable Solutions</h5>
+                            <p class="card-text">Design software that grows with your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>ERP and CRM Implementation</h3>
+              <ul>
+                <li>ERP Implementation</li>
+                <li>CRM Solutions</li>
+                <li>Customization & Integration</li>
+                <li>Ongoing Support</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Business Process Automation</h3>
+              <ul>
+                <li>Workflow Automation</li>
+                <li>Custom Applications</li>
+                <li>Data Analytics</li>
+                <li>System Integration</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Custom Software Development</h3>
+              <ul>
+                <li>Bespoke Software Solutions</li>
+                <li>Mobile & Web Applications</li>
+                <li>Software Maintenance & Support</li>
+                <li>Scalable Solutions</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h3>Website Development & SEO/CRO</h3>
+              <ul>
+                <li>Website Design & Development</li>
+                <li>Search Engine Optimization (SEO)</li>
+                <li>Conversion Rate Optimization (CRO)</li>
+                <li>Content Management</li>
+                <li>Analytics & Reporting</li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <h3>Change Management Expertise</h3>
+              <ul>
+                <li>Stakeholder Engagement and Communication</li>
+                <li>Employee Training and Support</li>
+                <li>Ongoing Reinforcement</li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <h3>Industries We Serve</h3>
+              <ul>
+                <li>Logistics and Supply Chain</li>
+                <li>Automotive</li>
+                <li>Financial Services</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+      <section class="py-5 bg-black">
+        <div class="container">
+            <h2 class="text-center mb-4 text-white">Website Development & SEO/CRO</h2>
+            <p class="text-center mb-5 text-white">Enhance your online presence and drive growth with our comprehensive website development and optimization services. We create visually appealing, user-friendly websites optimized for search engines and conversion.</p>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light" style="color: #A42BEA;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-desktop fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Website Design & Development</h5>
+                            <p class="card-text">Build responsive, engaging websites that reflect your brand identity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-search fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Search Engine Optimization (SEO)</h5>
+                            <p class="card-text">Improve your website’s visibility and ranking on search engines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Conversion Rate Optimization (CRO)</h5>
+                            <p class="card-text">Increase your website’s effectiveness in converting visitors into customers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-file-alt fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Content Management</h5>
+                            <p class="card-text">Develop and manage content that resonates with your target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-pie fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Analytics & Reporting</h5>
+                            <p class="card-text">Track and analyze website performance to inform strategic decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #A42BEA;">Change Management Expertise</h2>
+            <p class="text-center mb-5">Change is challenging, and we’re here to make it easier. As Prosci-certified Change Management Practitioners, we recognize that successful transformation depends on more than just technology. We focus on the people side of change, ensuring that every stakeholder is supported and ready to adapt to new systems and processes.</p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Stakeholder Engagement and Communication</h5>
+                            <p class="card-text">We work closely with your teams to build awareness and buy-in, addressing concerns and fostering an environment of collaboration and openness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chalkboard-teacher fa-2x mb-3 " style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Employee Training and Support</h5>
+                            <p class="card-text">With tailored training programs, we ensure that employees have the knowledge and confidence to adopt new tools and approaches effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-light text-dark">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hand-holding-heart fa-2x mb-3" style="color: #A42BEA;"></i>
+                            <h5 class="card-title">Ongoing Reinforcement</h5>
+                            <p class="card-text">We provide continuous support post-implementation, ensuring lasting adoption and measurable results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #c25aff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-white">
+                    <h2>IT Hardware/Consumables</h2>
+                    <p>We leverage partnerships to provide the latest hardware and consumables that organizations can utilize in their IT operations.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/hardware-3509891_640.jpg" alt="Our Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="images/360_F_439356895_nqxBZErAnvqMRZSf3PTt8duSlV37uOlX.jpg" alt="Our Approach" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h2>Software Procurement</h2>
+                    <p>The provision of a centralised method to procure and manage the renewal of all your software license needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #c25aff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-white">
+                    <h2>Cloud Services</h2>
+                    <p>Migrate to the cloud with minimal disruption and maximized efficiency. Our hassle-free cloud migration service seamlessly transfers your data, applications, and infrastructure, with full support from our team so you can focus on running your business.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/istockphoto-966932508-612x612-2.jpg" alt="Our Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="images/inscription-testing-on-virtual-display-business-medicine-modern-technology-internet-and-networking-concept-photo.jpg" alt="Our Approach" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h2>Software Testing</h2>
+                    <p>For organisations that develop their own software products and applications we provide evaluation and verification support to ensure that the products are rolled out working as intended.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+
+    <section class="py-5" style="background-color: #c25aff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-white">
+                    <h2>Digital Marketing</h2>
+                    <p>Our data-driven digital marketing offerings encompass personalised digital advertising services, SEO strategies to boost organic traffic, engaging social media management, and conversion rate optimisation to turn website visitors into customers.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/360_F_252760983_ZTCURKreID1WJkC7uiX6olt7hH0Q7v8X.jpg" alt="Our Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="images/pexels-luis-gomes-166706-546819.jpg" alt="Our Approach" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <h2>Website development and content creation</h2>
+                    <p>We design and develop websites that leverage user data to create exceptional user experiences and content that drives business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+    <section class="py-5" style="background-color: #c25aff;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-white">
+                    <h2>Audio/Visual (Content Creation & Curation)</h2>
+                    <p>We offer a comprehensive suite of Audio and Visual services including product videography, photography, immersive sound design, and expert editing & post-production. We seamlessly integrate your story across digital marketing and website platforms, creating a multi-sensory experience that engages audiences and drives results.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/marketing-7579809_1280.png" alt="Our Services" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-2 bg-white">
+        <div class="container">
+            <hr class="bg-dark">
+        </div>
+    </section>
+   
+    <section class="py-5 text-white" style="background-color: #5e149a;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2>LET’S START BUILDING YOUR FUTURE WITH US</h2>
+                </div>
+                <div class="col-md-6 text-center text-md-left">
+                    <a href="contact.html" class="btn btn-dark">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+<footer class="text-center text-white" style="background-color: #5e149a;">
+    <div class="container">
+      <section class="mt-5">
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="index.html" class="text-white">Home</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="about.html" class="text-white">About Us</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="services.html" class="text-white">Services</a>
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="contact.html" class="text-white">Get In Touch</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-3 text-white" />
+
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <address>
+              <strong>ABSTRKTION</strong><br>
+              676 Gallagher Ave, The Link, Block A Ground Floor,<br>
+              Midrand, 1685<br>
+              <a href="mailto:info@abstrktion.co.za" class="text-white">info@abstrktion.co.za</a>
+            </address>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center mb-5">
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+          </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      
+      </section>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      &copy; 2024 ABSTRKTION. All rights reserved.
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
