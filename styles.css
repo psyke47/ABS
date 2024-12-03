@@ -1,0 +1,17 @@
+.nav-link.active {
+    border-bottom: 2px solid white;
+}
+#progressBar {
+    position: fixed;
+    top: 80px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #5e149a;
+    z-index: 1031;
+}
+#progressBar div {
+    height: 100%;
+    background-color: #ffffff;
+    width: 0%;
+}
