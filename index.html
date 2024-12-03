@@ -5,16 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstrktion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        .nav-link.active {
-            border-bottom: 2px solid white;
-        }
-      
-    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg px-lg-5 text-white bg-gradient" style="background-color: #5e149a; color: white;">
+    <nav class="navbar navbar-expand-lg px-lg-5 text-white bg-gradient sticky-top" style="background-color: #5e149a; color: white;">
         <a class="navbar-brand px-lg-5 text-white" href="index.html" style="padding: 0.5rem 1rem;">
             <img src="images/cropped-ABSTRKTION-1-192x192.png" alt="Logo" style="height: 50px;">
             ABSTRKTION
@@ -39,6 +34,10 @@
             </ul>
         </div>
     </nav>
+    <div id="progressBar">
+        <div></div>
+    </div>
+  
     <!--
     <div class="jumbotron jumbotron-fluid text-white d-flex align-items-center" style="background-image: url('images/pexels-pixabay-46160.jpg'); background-size: cover; background-position: center; height: 80vh; filter: opacity(0.8) drop-shadow(0 0 0 #a42bea);">
         <div class="container text-center justify-content-center">
@@ -117,7 +116,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h3>What Makes Us Different?</h3>
+                    <h3 style="color: #A42BEA;">What Makes Us Different?</h3>
                     <p>As your local digital partner, we’re deeply rooted in South Africa, ensuring culturally relevant solutions. We offer a one-stop shop for seamless digital transformation with our turnkey expertise. Committed to your success, we embrace a collaborative approach, constantly learning and implementing cutting-edge solutions. Our agile and responsive team delivers swift solutions that adapt to your evolving needs Committed to your success, we embrace a collaborative approach, constantly learning and implementing cutting-edge solutions. Our agile and responsive team delivers swift solutions that adapt to your evolving needs.</p>
                 </div>
                 <div class="col-md-6 text-center">
@@ -245,9 +244,9 @@
 </section>
 <section class="py-5" >
     <div class="container">
-        <h2 class="text-center mb-5">Our Unique Approach</h2>
-        <div class="row">
-            <div class="col-md-8 align-content-center">
+        <h2 class="text-center mb-5" style="color: #A42BEA;">Our Unique Approach</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 align-content-center ">
                 <p>At ABSTRKTION, we’re more than just consultants; we’re partners in your success. We combine deep technical expertise with a personalized, hands-on approach, ensuring that every solution we implement is tailored to your business goals. With a commitment to innovation, we empower African businesses to become resilient, future-ready, and growth-focused</p>
             </div>
             <div class="col-md-4">
@@ -256,16 +255,49 @@
         </div>
     </div>
 </section>
-<section class=" text-white py-5" style="background-color: #A42BEA;">
+<section class=" text-white py-5" style="background-color: #000000">
+    <h2 class="text-center mb-5">Our Commitment to Your Success</h2>
     <div class="container">
-        <h2 class="text-center mb-4">Our Commitment to Your Success</h2>
-        <p class="text-center mb-5">At ABSTRKTION, we are committed to being more than just a technology vendor. We are your strategic partners, invested in your success at every step. Whether you are looking to implement ERP and CRM systems, develop a new website, optimize your online presence with SEO/CRO, or manage the change associated with these transformations, ABSTRKTION provides the expertise, tools, and support to drive meaningful results.</p>
-        <p class="text-center">Our customized approach ensures that we address the specific challenges and opportunities your business faces, all while leveraging the power of the Microsoft Business Applications suite. With our change management expertise and deep technical knowledge, we ensure a smooth transition that sets your business up for future growth.</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/pexels-goumbik-669623.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-8 justify-content-center align-items-center px-5">
+                
+                <p class="mb-5">At ABSTRKTION, we are committed to being more than just a technology vendor. We are your strategic partners, invested in your success at every step. Whether you are looking to implement ERP and CRM systems, develop a new website, optimize your online presence with SEO/CRO, or manage the change associated with these transformations, ABSTRKTION provides the expertise, tools, and support to drive meaningful results.</p>
+                <p>Our customized approach ensures that we address the specific challenges and opportunities your business faces, all while leveraging the power of the Microsoft Business Applications suite. With our change management expertise and deep technical knowledge, we ensure a smooth transition that sets your business up for future growth.</p>
+            </div>
+            
+       </div>
+    </div>
+</section>
+<section class="py-5" style="background-color: #c25aff;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white mb-4 mb-md-0">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest news and special offers. Enter your name and email below to subscribe to our newsletter.</p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="name" class="text-white">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="text-white">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Send</button>
+                </form>
+            </div>
+        </div>
     </div>
 </section>
 <section class="py-5" style="background-color: #fff;">
     <div class="container text-center">
-        <h2 class="mb-5">Our Partners</h2>
+        <h2 class="mb-5" style="color: #A42BEA;">Our Partners</h2>
         <div class="row">
             <div class="col-md-3 mb-4">
                 <div class="flip-card" style="background-color: transparent; width: 100%; height: 200px; perspective: 1000px;">
@@ -319,29 +351,7 @@
     </div>
 </section>
 </section>
-    <section class="py-5" style="background-color: #c25aff;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-white mb-4 mb-md-0">
-                    <h2>Subscribe to Our Newsletter</h2>
-                    <p>Stay updated with the latest news and special offers. Enter your name and email below to subscribe to our newsletter.</p>
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="name" class="text-white">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email" class="text-white">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <button type="submit" class="btn btn-dark">Send</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <footer class="text-center text-white" style="background-color: #5e149a;">
         <div class="container">
           <section class="mt-5">
@@ -406,5 +416,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
