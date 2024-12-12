@@ -12,9 +12,51 @@
 }
 #progressBar div {
     height: 100%;
-    background-color: #000000;
+    background-color: #fff;
     width: 0%;
 }
+
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-item img {
+    max-height: 400px; 
+    object-fit: cover; 
+    width: 100%;
+  }
+  
+  .carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856); /* Adjust the color and opacity as needed */
+  }
+  
+  .carousel-caption {
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    padding: 10px;
+  }
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.671);
+}
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
 @media  screen and (max-width: 992px) {
     #progressBar {
         top: auto;
@@ -22,6 +64,14 @@
     .nav-link.active {
         border-bottom: none;
     }
+    .carousel-caption {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .carousel-item img {
+    max-height: 200px; /* Adjust the height for smaller screens */
+    }
+    
 }
 
 @media  screen and (max-width: 600px) {
@@ -30,5 +80,12 @@
     }
     .nav-link.active {
         border-bottom: none;
+    }
+    .carousel-caption {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .carousel-item img {
+    max-height: 200px; /* Adjust the height for smaller screens */
     }
 }
