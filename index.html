@@ -455,6 +455,29 @@
           &copy; 2024 ABSTRKTION. All rights reserved.
         </div>
       </footer>
+
+      <script type='text/javascript'>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scriptId = '75e3ca5c-2aad-4283-9b06-8ae283775826';
+            const bannerHeight = 90; /* Override banner height */
+            const bannerWidth = 728; /* Override banner width */
+            const embedType = 'banner'; /* Set embed type: inline or banner. */
+    
+            const script = document.createElement('script');
+            script.defer = true;
+            script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=${bannerWidth}&embedType=${embedType}`;
+            
+            script.onload = function() {
+                console.log('Banner script loaded successfully.');
+            };
+            
+            script.onerror = function() {
+                console.error('Error loading banner script.');
+            };
+    
+            document.body.append(script);
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
