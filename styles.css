@@ -1,3 +1,6 @@
+*{
+    font-family: 'Trebuchet MS', sans-serif;
+}
 .nav-link.active {
     border-bottom: 2px solid white;
 }
@@ -56,7 +59,30 @@
     color: white;
     cursor: pointer;
 }
-
+/*.secondary-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* Ensure it stays above other content 
+} 
+*/
+.service-hero-section {
+    height: 50vh;
+    background-color: #f8f9fa; 
+    overflow: hidden;
+}
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.247) 0%, rgba(255, 255, 255, 0.096) 20%);
+    pointer-events: none;
+}
+  .service-hero-section .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 @media  screen and (max-width: 992px) {
     #progressBar {
         top: auto;
