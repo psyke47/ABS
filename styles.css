@@ -102,7 +102,9 @@
     width: 100px; /* Adjust size if necessary */
     height: auto;
 }
-
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 @media  screen and (max-width: 992px) {
     #progressBar {
