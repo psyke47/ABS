@@ -14,23 +14,28 @@
             <img src="images/cropped-ABSTRKTION-1-192x192.png" alt="Logo" style="height: 50px;">
             ABSTRKTION
         </a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse px-lg-5" id="navbarNav">
-            <ul class="navbar-nav justify-content-center ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link link-secondary text-white" href="index.html" style="padding: 0.5rem 1rem;">Home</a>
-                </li>
+            <ul class="navbar-nav justify-content-center ml-auto" style="margin-left: auto;">
                 <li class="nav-item">
                     <a class="nav-link link-dark text-white" href="about.html" style="padding: 0.5rem 1rem;">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link link-dark text-white 0.5rem 1rem;" href="solutions.html" style="padding: 0.5rem 1rem;">Services</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link-dark text-white dropdown-toggle" data-bs-toggle="dropdown" href="services.html" style="padding: 0.5rem 1rem;">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services.html">Services Dashboard</a></li>
+                        <li><a class="dropdown-item" href="erp-crm.html">ERP & CRM</a></li>
+                        <li><a class="dropdown-item" href="business-process.html">Business Process Automation</a></li>
+                        <li><a class="dropdown-item" href="custom-software.html">Custom Software Development & QA</a></li>
+                        <li><a class="dropdown-item" href="web-dev.html">Website Development & SEO/CRO</a></li>
+                        <li><a class="dropdown-item" href="change-management.html">Adoption & Change Management</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active text-white" href="solutions.html" style="padding: 0.5rem 1rem;">Our Solutions</a>
-                </li>
+                    <a class="nav-link link-dark text-white active" href="solutions.html" style="padding: 0.5rem 1rem;">Solutions</a>
+                </li>                  
                 <li class="nav-item">
                     <a class="nav-link link-dark text-white" href="contact.html" style="padding: 0.5rem 1rem;">Get In Touch</a>
                 </li>
