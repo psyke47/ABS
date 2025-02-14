@@ -105,6 +105,12 @@
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
+/* Add hover effect to dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #5e149a; /* Purple background on hover */
+    color: white !important;    /* White text on hover */
+}
+
 
 @media  screen and (max-width: 992px) {
     #progressBar {
