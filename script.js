@@ -9,3 +9,7 @@ $(document).ready(function() {
     });
 });
 
+window.addEventListener('load', function () {
+    // Hide the preloader after page load
+    document.getElementById('preloader').style.display = 'none';
+});

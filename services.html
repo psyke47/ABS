@@ -27,6 +27,7 @@
     <meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
     <meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
+</head>
 <body>
     <nav class="navbar navbar-expand-lg px-lg-5 text-white bg-gradient sticky-top" style="background-color: #5e149a; color: white;">
         <a class="navbar-brand px-lg-5 text-white" href="index.html" style="padding: 0.5rem 1rem;">
@@ -39,23 +40,28 @@
         <div class="collapse navbar-collapse px-lg-5" id="navbarNav">
             <ul class="navbar-nav justify-content-center ml-auto" style="margin-left: auto;">
                 <li class="nav-item">
-                    <a class="nav-link link-secondary text-white" href="index.html" style="padding: 0.5rem 1rem;">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link link-dark text-white" href="about.html" style="padding: 0.5rem 1rem;">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active link-dark text-white" href="services.html" style="padding: 0.5rem 1rem;">Services</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link-dark text-white dropdown-toggle active" data-bs-toggle="dropdown" href="services.html" style="padding: 0.5rem 1rem;">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="services.html">Services Dashboard</a></li>
+                        <li><a class="dropdown-item" href="erp-crm.html">ERP & CRM</a></li>
+                        <li><a class="dropdown-item" href="business-process.html">Business Process Automation</a></li>
+                        <li><a class="dropdown-item" href="custom-software.html">Custom Software Development & QA</a></li>
+                        <li><a class="dropdown-item" href="web-dev.html">Website Development & SEO/CRO</a></li>
+                        <li><a class="dropdown-item" href="change-management.html">Adoption & Change Management</a></li>
+                    </ul>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark text-white" href="solutions.html" style="padding: 0.5rem 1rem;">Solutions</a>
+                </li>                  
                 <li class="nav-item">
                     <a class="nav-link link-dark text-white" href="contact.html" style="padding: 0.5rem 1rem;">Get In Touch</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id="progressBar">
-        <div></div>
-    </div>
     <!--<nav class="navbar navbar-expand-lg" style="background: rgb(255,255,255); background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(94,20,154,0.8855917366946778) 92%);">
         <a class="navbar-brand" href="index.html" style="padding: 0.5rem 1rem;">
             <img src="images/cropped-ABSTRKTION-1-180x180.png" alt="Logo" style="height: 30px;">
@@ -81,12 +87,132 @@
             </ul>
         </div>
     </nav>-->
+    <section class="hero hero-overlay d-flex text-center align-items-center justify-content-center" style="position: relative; background: url('images/pexels-pixabay-301378.jpg') no-repeat center center; background-size: cover; height: 55vh; color: white;">
+        <div class="container position-relative">
+            <h1 class="display-1 fw-bold">Our Offering</h1>
+        </div>
+    </section>
+    <section class="services-overview py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="images/pexels-n-voitkevich-8062289.jpg" alt="ERP and CRM Implementation" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover;">
+                            <h5 class="card-title">ERP and CRM Implementation</h5>
+                            <p class="card-text">Streamline operations and manage customer relationships effectively.</p>
+                            <a href="erp-crm.html" class="text-decoration-none">Learn More <i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="images/pexels-pixabay-159298.jpg" alt="Business Process Automation" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover;">
+                            <h5 class="card-title">Business Process Automation</h5>
+                            <p class="card-text">Reduce manual tasks and optimize workflows.</p>
+                            <a href="business-process.html" class="text-decoration-none">Learn More <i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="images/pexels-pixabay-270366.jpg" alt="Custom Software Development & QA" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover;">
+                            <h5 class="card-title">Custom Software Development & QA</h5>
+                            <p class="card-text">Tailored software solutions to meet specific business needs.</p>
+                            <a href="custom-software.html" class="text-decoration-none">Learn More <i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="images/pexels-pixabay-270637.jpg" alt="Website Development & SEO/CRO" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover;">
+                            <h5 class="card-title">Website Development & SEO/CRO</h5>
+                            <p class="card-text">Enhance your online presence and drive growth.</p>
+                            <a href="web-dev.html" class="text-decoration-none">Learn More <i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="images/jo-szczepanska-5aiRb5f464A-unsplash.jpg" alt="Change Management Expertise" class="img-fluid mb-3" style="width: 100%; height: 200px; object-fit: cover;">
+                            <h5 class="card-title">Adoption & Change Management</h5>
+                            <p class="card-text">Support stakeholders through transformation.</p>
+                            <a href="change-management.html" class="text-decoration-none">Learn More <i class="fas fa-long-arrow-alt-right fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!--
     <section class="position-relative py-5 text-white" style="background: url('images/pexels-craigmdennis-57007.jpg') no-repeat center center; background-size: cover;">
         <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
         <div class="container position-relative text-center">
             <h1>Services</h1>
-            <!--<a href="getintouch.html" class="btn btn-dark text-white mt-3">Get in Touch</a>-->
+            <a href="getintouch.html" class="btn btn-dark text-white mt-3">Get in Touch</a>-->
+            <!--
+        </div>
+    </section>
+    <section class="services-overview py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-cogs fa-2x mb-3"></i>
+                            <h5 class="card-title">ERP and CRM Implementation</h5>
+                            <p class="card-text">Streamline operations and manage customer relationships effectively.</p>
+                            <a href="erp-crm-implementation.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-sync-alt fa-2x mb-3"></i>
+                            <h5 class="card-title">Business Process Automation</h5>
+                            <p class="card-text">Reduce manual tasks and optimize workflows.</p>
+                            <a href="business-process-automation.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-2x mb-3"></i>
+                            <h5 class="card-title">Custom Software Development & QA</h5>
+                            <p class="card-text">Tailored software solutions to meet specific business needs.</p>
+                            <a href="custom-software-development.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-desktop fa-2x mb-3"></i>
+                            <h5 class="card-title">Website Development & SEO/CRO</h5>
+                            <p class="card-text">Enhance your online presence and drive growth.</p>
+                            <a href="website-development.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-2x mb-3"></i>
+                            <h5 class="card-title">Change Management Expertise</h5>
+                            <p class="card-text">Support stakeholders through transformation.</p>
+                            <a href="change-management.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!--<div id="servicesCarousel" class="carousel slide" data-ride="carousel">
@@ -148,6 +274,7 @@
           <span class="sr-only">Next</span>
         </a>
       </div>-->
+      <!--
     <section class="py-5" style="background-color: #f8f9fa;">
         <div class="container">
             <h2 class="text-center mb-4" style="color: #A42BEA;">ERP and CRM Implementation</h2>
@@ -279,7 +406,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 <!--
     <section id="services" class="py-5 bg-light">
         <div class="container">
@@ -342,6 +469,7 @@
         </div>
       </section>
     -->
+      <!--
       <section class="py-5 bg-black">
         <div class="container">
             <h2 class="text-center mb-4 text-white">Website Development & SEO/CRO</h2>
@@ -432,7 +560,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!--
     <section class="py-2 bg-white">
@@ -585,64 +713,71 @@
 -->
 <footer class="text-center text-white" style="background-color: #5e149a;">
     <div class="container">
-      <section>
-        <div class="row text-center d-flex justify-content-center pt-5">
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="index.html" class="text-white">Home</a>
-            </h6>
-          </div>
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="about.html" class="text-white">About Us</a>
-            </h6>
-          </div>
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="services.html" class="text-white">Services</a>
-            </h6>
-          </div>
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="contact.html" class="text-white">Get In Touch</a>
-            </h6>
-          </div>
-        </div>
-      </section>
+        <section>
+            <div class="row text-center d-flex justify-content-center pt-5">
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="index.html" class="text-white">Home</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="about.html" class="text-white">About Us</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="services.html" class="text-white">Services</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="solutions.html" class="text-white">Solutions</a>
+                    </h6>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="contact.html" class="text-white">Get In Touch</a>
+                    </h6>
+                </div>
+            </div>
+        </section>
 
-      <hr class="my-3 text-white" />
+        <hr class="my-3 text-white" />
 
-      <section class="mb-5">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <address>
-              <strong>ABSTRKTION</strong><br>
-              676 Gallagher Ave, The Link, Block A Ground Floor,<br>
-              Midrand, 1685<br>
-              <a href="mailto:info@abstrktion.co.za" class="text-white">info@abstrktion.co.za</a>
-            </address>
-          </div>
-        </div>
-      </section>
+        <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <address>
+                        <strong>ABSTRKTION</strong><br>
+                        676 Gallagher Ave, The Link, Block A Ground Floor,<br>
+                        Midrand, 1685<br>
+                        <a href="mailto:info@abstrktion.co.za" class="text-white">info@abstrktion.co.za</a>
+                    </address>
+                </div>
+            </div>
+        </section>
 
-      <section class="text-center mb-5">
-        <a href="#" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-          </a>
-        <a href="#" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      
-      </section>
+        <section class="text-center mb-5">
+            <a href="#" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/abstrktion" class="text-white me-4">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/abstr.ktion/" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/abstrktion/" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </section>
     </div>
 
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      &copy; 2024 ABSTRKTION. All rights reserved.
+        &copy; 2024 ABSTRKTION. All rights reserved.
     </div>
-  </footer>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
